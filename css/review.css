@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
 }
 
 .top-menu {
@@ -121,6 +122,11 @@ ul {
     font-size: 14px;
     line-height: 24px;
     color: #505565;
+    padding-left: 160px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+
 }
 .wixReview_text a {
     color: #505565;
@@ -131,6 +137,7 @@ ul {
     font-weight: 600;
     font-size: 14px;
     color: #8B90A0;
+
 }
 #wix {
     margin-top: 24px;
@@ -150,7 +157,15 @@ ul {
     color: #505565;;
 }
 .globalContainer {
-    padding: 32px 544px 112px 160px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mainContent {
+    width: 736px;
 }
 .overview {
     padding: 32px 32px 56px 32px;
@@ -162,23 +177,77 @@ ul {
     font-size: 15px;
     line-height: 32px;
     color: #505565;
-    margin-top: 32px;
     margin-bottom: 16px;
 }
 .table_sidebar {
     font-family: Open Sans;
     font-style: normal;
-    font-weight: 600;
+    font-weight: normal;
     font-size: 24px;
     line-height: 32px;
     width: 352px;
-    background-color: red;
-    height: 500px;
     position: fixed;
-    right: 160px;
-    top: 267px;
+    right: 120px;
+
+
+
+
 }
 .table_sidebar p {
+    margin: 0;
+}
+.table_sidebar ul {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+
+}
+.table_sidebar li{
+    position: relative;
+    margin-bottom: 18px;
+    counter-increment: my-awesome-counter;
+    margin: 0.25rem;
+}
+.table_sidebar li::before{
+    content: counter(my-awesome-counter,decimal-leading-zero);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    margin-left: 46px;
+    text-align: center;
+}
+
+.table_sidebar li::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 2.5px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    left: 72px;
+    bottom: 11px;
+}
+.table_sidebar li:hover {
+    border-color: #9B51E0;
+    border-left-width: 2px;
+    border-left-style: solid;
+    font-weight: 600;
+    color: #9B51E0;
+}
+.table_sidebar h4 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
     margin: 0;
 }
 
@@ -192,10 +261,46 @@ ul {
     margin-bottom: 8px;
 }
 .imageShape {
-
     width: 111px;
     height: 54px;
+}
 
+.table_content_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+
+.table_content_list {
+    margin-bottom: 56px;
+    display: none;
+
+}
+
+#show_all_button {
+    background-color: #FFFFFF;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    outline: 0;
+    border: 0;
+    color: #8B90A0;
+    padding: 0;
+
+}
+
+#show_all_button  img {
+    transition: transform 0.3s ease;
+}
+
+#smallVector {
+    margin-left: 10px;
+}
+#show_all_button:hover {
+    cursor: pointer;
 }
 .sidebar_star_container {
     display: flex;
@@ -339,7 +444,7 @@ ul {
     color: #232735;
 }
 .wixPros_cons {
-    padding: 32px 32px 56px 32px;
+    padding: 32px 32px 2px 32px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -376,7 +481,7 @@ ul {
 }
 
 .wix_rating {
-    padding: 32px 32px 56px 32px;
+    padding: 32px 32px 2px 32px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -386,7 +491,7 @@ ul {
     line-height: 32px;
     color: #505565;
     margin-top: 32px;
-    margin-bottom: 16px;
+
 }
 .wix_rating p {
     font-family: Open Sans;
@@ -413,9 +518,12 @@ ul {
     margin-top: 24px;
     margin-bottom: 40px;
 }
+#stopper {
+    width: 100%;
+}
 footer {
     background-color:  #F0F1F3;
-
+    margin-top: 112px;
 
 }
 .footer_menu {
@@ -474,4 +582,14 @@ footer {
 .copyright_block h3 {
     position: relative;
 
+}
+
+.open-block {
+    display: block;
+}
+
+.transform-rotate {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transition: transform .5s ease;
 }

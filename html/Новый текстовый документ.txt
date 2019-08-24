@@ -1,0 +1,47 @@
+  <div class="table_content_container">
+            <h4>Table of content</h4>
+            <button id="show_all_button">Show all</button>
+        </div>
+
+        <ol class="table_content_list">
+            <li>Overview</li>
+            <li>Who should use Wix?</li>
+        </ol>
+
+
+
+
+
+
+
+
+.table_content_container {
+    display: flex;
+    justify-content: space-between;
+
+
+    padding-right: 14px;
+    margin-bottom: 16px;
+}
+.table_content_container h4 {
+    margin: 0;
+}
+#show_all_button {
+    background-color: #FFFFFF;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    outline: 0;
+    border: 0;
+    color: #8B90A0;
+
+
+}
+#show_all_button::after {
+    content: "\2c5";
+}
+#show_all_button:hover {
+    cursor: pointer;
+}

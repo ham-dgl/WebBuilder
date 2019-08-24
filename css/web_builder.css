@@ -168,8 +168,12 @@ ul {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
-
 }
+
+.for_content1 a:hover {
+    text-decoration: none   ;
+}
+
 .content_links {
     width: 224px;
     text-align: center;
@@ -241,7 +245,6 @@ ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
     padding: 0 16px 0 16px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
@@ -683,6 +686,7 @@ footer {
     padding-right: 13px;
     border-radius: 27px;
     background-color: #D3D4D8;
+    cursor: pointer;
 }
 .vector img {
 

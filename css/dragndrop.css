@@ -1,3 +1,8 @@
+.dragndropTitle {
+    width: 736px;
+    padding-left: 117px;
+}
+
 .dragndropTitle span {
     font-family: Open Sans;
     font-style: normal;
@@ -83,6 +88,7 @@
     padding-left: 46px;
 }
 .comparison_site_builders {
+    box-sizing: border-box;
     padding: 32px 32px 56px 32px;
     font-family: Open Sans;
     font-style: normal;
@@ -107,4 +113,13 @@
     color: #505565;
     margin-top: 32px;
     margin-bottom: 16px;
+}
+.category_rating {
+    width: 100%;
+}
+.category_rating2 {
+    width: 100%;
+}
+.rating_content img {
+    width: 128px;
 }
