@@ -23,7 +23,7 @@
 
         forCommerce.style.display = "none";
         forCreative.style.display = "none";
-    })
+    });
 
     Commerce.addEventListener('click',function () {
 
@@ -34,7 +34,7 @@
 
         forBusiness.style.display = "none";
         forCreative.style.display = "none";
-    })
+    });
 
     Creative.addEventListener('click',function () {
 
